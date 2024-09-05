@@ -13,8 +13,8 @@ function Education() {
                                     {/* Timeline-item 1 */}
                                     <div className="timeline-item">
                                         <div className="circle-dot"></div>
-                                        <h3 className="timeline-title">SSC-78%</h3>
-                                        <h4 className="timeline-title">K.T.K.M. Higher Secondary High Secondary School</h4>
+                                        <h3 className="timeline-title">SSC - 78%</h3>
+                                        <h4 className="timeline-title">K.T.K.M. Higher Secondary High School</h4>
                                         <h4 className="timeline-title">
                                             <i className="fa fa-calendar"></i> 2018-2020
                                         </h4>
@@ -22,8 +22,8 @@ function Education() {
                                     {/* Timeline-item 2 */}
                                     <div className="timeline-item">
                                         <div className="circle-dot"></div>
-                                        <h3 className="timeline-title">HSC-78%</h3>
-                                        <h4 className="timeline-title">K.T.K.M. Higher Secondary High Secondary School</h4>
+                                        <h3 className="timeline-title">HSC - 78%</h3>
+                                        <h4 className="timeline-title">K.T.K.M. Higher Secondary High School</h4>
                                         <h4 className="timeline-title">
                                             <i className="fa fa-calendar"></i> 2020-2021
                                         </h4>
@@ -32,9 +32,9 @@ function Education() {
                                     <div className="timeline-item">
                                         <div className="circle-dot"></div>
                                         <h3 className="timeline-title">
-                                            Computer Programming Diploma 3.11 CGPA
+                                            Computer Programming Diploma - 3.11 CGPA
                                         </h3>
-                                        <h4 className="timeline-title">Algonquin College, Ottawa, CA</h4>
+                                        <h4 className="timeline-title">Algonquin College, Ottawa, Canada</h4>
                                         <h4 className="timeline-title">
                                             <i className="fa fa-calendar"></i> 2023-2025
                                         </h4>
@@ -51,13 +51,15 @@ function Education() {
                                     {/* Internship Timeline-item */}
                                     <div className="timeline-item">
                                         <div className="circle-dot"></div>
-                                        <h3 className="timeline-title">SOFTWARE DEVELOPMENT</h3>
-                                        <h4 className="timeline-title">FLARIAL TECHNOLOGY</h4>
+                                        <h3 className="timeline-title">Web Portal Developer - IT Department</h3>
+                                        <h4 className="timeline-title">Sintex Industries Limited (Yarn Division)</h4>
                                         <h4 className="timeline-title">
-                                            <i className="fa fa-calendar"></i> JUNE-2022
+                                            <i className="fa fa-calendar"></i> August 2022 - January 2023
                                         </h4>
                                         <li className="timeline-text">
-                                            Proficient in Android app development, with expertise in Java and building basic applications. Experienced in creating intuitive design and layout files. Completed a two-week internship, gaining practical skills and knowledge in the field.
+                                            Developed and maintained web portal features for the Infra Portal using HTML, CSS, and JavaScript. 
+                                            Built data entry forms for asset management and invoice data using PHP and MySQL. 
+                                            Contributed to automation projects and IT support, gaining practical experience in web development and system automation.
                                         </li>
                                     </div> 
                                 </div>

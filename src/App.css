@@ -415,7 +415,6 @@ profile-photo .img{
 /*---------------------------Projects---------------------------*/
 .project-content{
   padding: 90px 0;
-  /* color:#fff;  */
 }
 .project-title{
   margin-bottom: 60px;
@@ -431,7 +430,7 @@ profile-photo .img{
 
 .project-content .project {
   position: relative;
-  padding: 30px;
+  padding: 20px; /* Reduced padding for more compact content */
   border: 2px solid #e5e5e5;
   border-radius: 10px;
   text-align: center;
@@ -459,14 +458,15 @@ profile-photo .img{
 }
 
 .project h4 {
-  font-size: 24px;
+  font-size: 22px; /* Slightly smaller font for headings */
   margin: 10px 0;
 }
 
 .project p {
-  font-size: 16px;
+  font-size: 15px; /* Adjusted font size for compactness */
   color: #e5e5e5;
-  line-height: 1.5;
+  line-height: 1.4; /* Adjusted line-height for better text compactness */
+  margin: 10px 0; /* Margin adjustment for spacing between paragraphs */
   text-align: justify;
 }
 
@@ -475,22 +475,23 @@ profile-photo .img{
 }
 .projects{
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px; /* Added gap between project cards */
 }
-.project{
-    /* padding: 30px 15px; */
+.project {
     color: #e5e5e5;
     border: 2px solid #e5e5e5;
     border-radius: 10px;
     width: 100%;
+    max-width: 32%; /* Ensures the project boxes maintain a consistent width */
     position: relative;
-    padding: 25px;
+    padding: 20px; /* Reduced padding */
     text-align: center;
     flex-basis: 32%;
     transition: .3s;
 }
-.project i{
+.project i {
   background-color: #fed700;
   width: 60px;
   height: 60px;
@@ -499,15 +500,12 @@ profile-photo .img{
   line-height: 60px;
   border-radius: 50%;
 }
-.project h4{
-  font-size: 26px;
+.project h4 {
+  font-size: 24px;
   text-transform: capitalize;
-  margin: 20px 0;
+  margin: 15px 0;
 }
-.project p{
-  text-align: justify;
-}
-.project:hover{
+.project:hover {
   border-color: #fed700;
 }
 

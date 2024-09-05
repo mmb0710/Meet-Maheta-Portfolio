@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faCar, faDesktop } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faDatabase, faNetworkWired, faMobileAlt, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   useEffect(() => {
@@ -30,32 +30,68 @@ const Projects = () => {
       <div className="container">
         <div className="project-title">
           <h4>My Projects</h4>
-          <p>Discover my projects, where creativity meets innovation</p>
+          <p>Discover my real-world projects where I applied technical skills and problem-solving capabilities</p>
         </div>
         <div className="projects">
           {/* 1st Project */}
-          <div className="project">
+          <div className="project reveal-left-projects">
             <div className="icon-wrapper">
-              <FontAwesomeIcon icon={faCoffee} className="project-icon" />
+              <FontAwesomeIcon icon={faCode} className="project-icon" />
             </div>
-            <h4>SnakeGame Using Java</h4>
-            <p>This is a simple implementation of the classic Snake game using Java and Swing.</p>
+            <h4>Python-Based CSV Data Reader</h4>
+            <p>
+              A Python application using Pandas to read, manipulate, and visualize CSV data. Implemented features for filtering, sorting, and displaying results in an interactive manner.
+            </p>
           </div>
           {/* 2nd Project */}
-          <div className="project">
+          <div className="project reveal-right-projects">
             <div className="icon-wrapper">
-              <FontAwesomeIcon icon={faCar} className="project-icon" />
+              <FontAwesomeIcon icon={faDatabase} className="project-icon" />
             </div>
-            <h4>Nightguard</h4>
-            <p>An innovative embedded system solution for safer driving, combining matrix LED technology to reduce headlight glare and vibration sensors to detect potholes, enhancing road safety and minimizing accidents.</p>
+            <h4>COBOL Employee Data Management System</h4>
+            <p>
+              Designed a COBOL-based program to handle employee data entry, storage, and reporting functionalities. Developed flowcharts to map system design and verified program execution with test data.
+            </p>
           </div>
           {/* 3rd Project */}
-          <div className="project">
+          <div className="project reveal-left-projects">
             <div className="icon-wrapper">
-              <FontAwesomeIcon icon={faDesktop} className="project-icon" />
+              <FontAwesomeIcon icon={faNetworkWired} className="project-icon" />
             </div>
-            <h4>Portfolio Website</h4>
-            <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce myself, share my projects, and provide information about my education and internship.</p>
+            <h4>Network Services Portal with Django</h4>
+            <p>
+              Created a web portal using Python's Django framework for user management and service administration. Integrated RESTful APIs for communication between the frontend and backend systems.
+            </p>
+          </div>
+          {/* 4th Project */}
+          <div className="project reveal-right-projects">
+            <div className="icon-wrapper">
+              <FontAwesomeIcon icon={faNetworkWired} className="project-icon" />
+            </div>
+            <h4>Infra Portal Development (Sintex Industries)</h4>
+            <p>
+              Contributed to the development of an Infra Portal for asset management at Sintex Industries. Built database integration with PHP and MySQL, and implemented LAN diagrams for internal IT automation.
+            </p>
+          </div>
+          {/* 5th Project */}
+          <div className="project reveal-left-projects">
+            <div className="icon-wrapper">
+              <FontAwesomeIcon icon={faMobileAlt} className="project-icon" />
+            </div>
+            <h4>Food Order Application (Android Studio)</h4>
+            <p>
+              Developed a food ordering mobile application using Android Studio and Java. Implemented backend APIs using Postman for data management and customer interactions, with full integration for order processing.
+            </p>
+          </div>
+          {/* 6th Project */}
+          <div className="project reveal-right-projects">
+            <div className="icon-wrapper">
+              <FontAwesomeIcon icon={faUtensils} className="project-icon" />
+            </div>
+            <h4>Food Wastage Reproduce Project (Java Servlet)</h4>
+            <p>
+              Created a Java Servlet-based project aimed at managing food wastage. Implemented a system for collecting data on leftover food and redistributed resources efficiently through web-based forms and reports.
+            </p>
           </div>
         </div>
       </div>

@@ -39,7 +39,6 @@ const Home = () => {
         Welcome to my portfolio website! I am an international student who has recently completed a Computer Programming course at Algonquin College in Ottawa, Canada. With a strong passion for coding and a commitment to continuous learning, I have developed a solid foundation in software development and database management. My experience has fueled my eagerness to create innovative solutions and tackle real-world challenges in the tech industry. As I embark on my professional journey, I am excited to contribute my skills and knowledge to impactful projects that push the boundaries of technology. Thank you for visiting, and I look forward to connecting with like-minded professionals.
         </p>
         <div className="btn-group">
-          <a href="../files/Resume.pdf" className="btn active">Download CV</a>
           <a href="mailto:mmb0702004@gmail.com" className="btn">Contact</a>
         </div>
         <div className="social">
