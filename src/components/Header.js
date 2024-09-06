@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBolt, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBolt, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import SignatureImage from '../files/Signature.png'; // Adjust path based on actual location
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   // Sticky header effect
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +24,10 @@ function Header() {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header-area">
       <div className="container">
@@ -30,14 +36,14 @@ function Header() {
             <img src={SignatureImage} alt="signature" className="signature" />
             <FontAwesomeIcon icon={faBolt} className="bolt-icon" />
           </a>
-          <ul className="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
+          <ul className={`navbar ${isMenuOpen ? 'active' : ''}`}>
+            <li><a href="#home" onClick={toggleMenu}>Home</a></li>
+            <li><a href="#about" onClick={toggleMenu}>About</a></li>
+            <li><a href="#education" onClick={toggleMenu}>Education</a></li>
+            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
           </ul>
-          <div className="menu_icon">
-            <FontAwesomeIcon icon={faBars} className="bars-icon" />
+          <div className="menu_icon" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} className="bars-icon" />
           </div>
         </div>
       </div>

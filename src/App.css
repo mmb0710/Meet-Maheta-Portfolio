@@ -108,6 +108,27 @@ body{
 
   .navbar {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #202020;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu_icon {
+    display: none;
   }
 }
 
