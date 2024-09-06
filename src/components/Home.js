@@ -45,7 +45,7 @@ const Home = () => {
           <a href="mailto:mmb0702004@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a href="https://github.com/mmb0710/Algonquin-Computer-Programming-Portfolio.git">
+          <a href="https://github.com/mmb0710">
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a href="https://leetcode.com/u/mmb0702/">
