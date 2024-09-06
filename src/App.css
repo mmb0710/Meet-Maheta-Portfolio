@@ -547,50 +547,155 @@ profile-photo .img{
 
  /*------------------- Responsive Design on small screen -------------------*/
 
-/* Mobile Layout */
-@media only screen and (max-width: 576px) {
-  body {
-    font-size: 14px;
-    line-height: 22px;
+
+
+/* tablet layout */
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .container {
+    width: 90%;
+    max-width: 750px;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    width: 50%;
   }
 
   .FirstElement {
-    padding-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
   }
 
   .FirstElement .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+
+  .profile-text {
+    text-align: center;
   }
 
   .profile-text h1 {
-    font-size: 2rem;
-  }
-
-  .profile-text p {
-    font-size: 14px;
-  }
-
-  .projects {
-    gap: 15px;
+    font-size: 2.5rem;
   }
 
   .about {
     flex-direction: column;
   }
 
-  .about-skills ul li {
-    font-size: 16px;
+  .about-content, .about-skills {
+    flex-basis: 100%;
+    margin-bottom: 30px;
   }
 
-  .footer {
-    padding: 10px;
+  .education-content .row {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .project {
+    flex-basis: 48%;
+    max-width: 48%;
   }
 }
 
-/* tablet layout */
-@media only screen and (min-width:768px) and (max-width:999px){
-  .container{
-    width: 750px;
-  } 
-}  
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .menu_icon {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+  }
+
+  .FirstElement {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .FirstElement .profile-photo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .profile-text {
+    text-align: center;
+  }
+
+  .profile-text h1 {
+    font-size: 2rem;
+  }
+
+  .profile-text .social {
+    justify-content: center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-content, .about-skills {
+    flex-basis: 100%;
+  }
+
+  .education-content .row {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .btn-group .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
