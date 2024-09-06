@@ -637,44 +637,54 @@ profile-photo .img{
   }
 
   .header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 60px;
   }
 
   .navbar {
-    width: 100%;
-    flex-direction: column;
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #202020;
+    padding: 10px 0;
   }
 
   .navbar.active {
-    display: flex;
+    display: block;
   }
 
   .navbar li {
     margin: 10px 0;
+    text-align: center;
   }
 
   .menu_icon {
     display: block;
-    position: absolute;
-    top: 25px;
-    right: 15px;
+    font-size: 24px;
   }
 
   .FirstElement {
     flex-direction: column;
     padding-top: 2rem;
+    text-align: center;
   }
 
   .FirstElement .profile-photo {
     width: 200px;
     height: 200px;
     margin-bottom: 20px;
-  }
-
-  .profile-text {
-    text-align: center;
   }
 
   .profile-text h1 {
@@ -715,19 +725,10 @@ profile-photo .img{
   }
 
   .btn-group {
-    display: none; /* This will hide the entire button group on mobile screens */
+    display: none;
   }
 
-  /* Remove or comment out the following styles as they're no longer needed:
-  .btn-group .btn {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
+  .footer {
+    padding: 15px;
   }
-
-  .btn-group .btn:first-child {
-    order: -1;
-  }
-  */
 }
