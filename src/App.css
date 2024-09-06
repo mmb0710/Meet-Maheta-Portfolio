@@ -95,7 +95,7 @@ body {
   margin-left: 10px;
 }
 
-/* Responsive Styling for Mobile and Tablet */
+/* Mobile & Tablet Layout */
 @media (max-width: 768px) {
   /* Display the menu icon in mobile view */
   .menu_icon {
@@ -125,9 +125,21 @@ body {
   }
 }
 
+/* Laptop/Desktop Layout */
 @media (min-width: 769px) {
   .menu_icon {
     display: none; /* Hide the menu icon on larger screens */
+  }
+  
+  /* Container adjustments for laptop screens */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Navbar and logo adjustments */
+  .navbar {
+    width: 50%;
   }
 }
 
