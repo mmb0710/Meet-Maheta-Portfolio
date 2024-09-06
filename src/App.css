@@ -714,9 +714,20 @@ profile-photo .img{
     margin-bottom: 20px;
   }
 
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .btn-group .btn {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .btn-group .btn:first-child {
+    order: -1; /* This will move the home button to the top */
   }
 }
