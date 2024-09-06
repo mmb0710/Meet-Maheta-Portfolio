@@ -413,32 +413,28 @@ profile-photo .img{
 
 
 /*---------------------------Projects---------------------------*/
-
-.project-content {
+.project-content{
   padding: 90px 0;
 }
-
-.project-title {
+.project-title{
   margin-bottom: 60px;
   text-align: center;
 }
-
-.project-title h4 {
+.project-title h4{
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 40px;
   color: #fed700;
   margin-bottom: 20px;
 }
 
 .project-content .project {
-  padding: 20px;
+  position: relative;
+  padding: 20px; /* Reduced padding for more compact content */
   border: 2px solid #e5e5e5;
   border-radius: 10px;
   text-align: center;
-  transition: 0.3s;
-  flex-basis: 32%;
-  margin-bottom: 20px;
+  transition: .3s;
 }
 
 .project-content .project:hover {
@@ -446,7 +442,7 @@ profile-photo .img{
 }
 
 .icon-wrapper {
-  background-color: #fed700;
+  background-color: #fed700; /* Circle background color */
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -456,33 +452,63 @@ profile-photo .img{
   margin: 0 auto 15px auto;
 }
 
+.project-icon {
+  color: #333; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
 .project h4 {
-  font-size: 22px;
+  font-size: 22px; /* Slightly smaller font for headings */
   margin: 10px 0;
 }
 
 .project p {
-  font-size: 15px;
+  font-size: 15px; /* Adjusted font size for compactness */
   color: #e5e5e5;
-  line-height: 1.4;
-  margin: 10px 0;
+  line-height: 1.4; /* Adjusted line-height for better text compactness */
+  margin: 10px 0; /* Margin adjustment for spacing between paragraphs */
   text-align: justify;
 }
 
-.project-title p {
+.project-title p{
   color: #e5e5e5;
 }
-
-.projects {
+.projects{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 20px; /* Added gap between project cards */
 }
-
+.project {
+    color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 32%; /* Ensures the project boxes maintain a consistent width */
+    position: relative;
+    padding: 20px; /* Reduced padding */
+    text-align: center;
+    flex-basis: 32%;
+    transition: .3s;
+}
+.project i {
+  background-color: #fed700;
+  width: 60px;
+  height: 60px;
+  color: #333;
+  font-size: 26px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+.project h4 {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: 15px 0;
+}
 .project:hover {
   border-color: #fed700;
 }
+
 /*---------------------------Footer---------------------------*/
 .footer {
     max-width: 950px;
@@ -546,12 +572,23 @@ profile-photo .img{
     font-size: 16px;
   }
 
+  /* Make education and internship cards stack vertically */
+  .education-content .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education-content .education, 
+  .education-content .internship {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
   .footer {
     padding: 10px;
   }
 }
-
-
 
 /* tablet layout */
 @media only screen and (min-width:768px) and (max-width:999px){
