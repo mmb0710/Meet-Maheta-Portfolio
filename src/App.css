@@ -636,8 +636,6 @@ profile-photo .img{
     padding: 0 15px;
   }
 
-  
-
   .logo {
     font-size: 20px;
   }
@@ -701,5 +699,10 @@ profile-photo .img{
 
   .footer {
     padding: 15px;
+  }
+
+  /* Hide navbar buttons on mobile */
+  .navbar {
+    display: none;
   }
 }
