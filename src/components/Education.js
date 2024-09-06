@@ -32,7 +32,7 @@ function Education() {
                                     <div className="timeline-item">
                                         <div className="circle-dot"></div>
                                         <h3 className="timeline-title">
-                                            Computer Programming Diploma - 3.11 CGPA
+                                            Computer Programming Diploma - 3.55 CGPA
                                         </h3>
                                         <h4 className="timeline-title">Algonquin College, Ottawa, Canada</h4>
                                         <h4 className="timeline-title">
