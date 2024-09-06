@@ -651,29 +651,13 @@ profile-photo .img{
     width: 60px;
   }
 
-  .navbar {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #202020;
-    padding: 10px 0;
-  }
+  
 
-  .navbar.active {
-    display: block;
-  }
+  
 
-  .navbar li {
-    margin: 10px 0;
-    text-align: center;
-  }
+  
 
-  .menu_icon {
-    display: block;
-    font-size: 24px;
-  }
+  
 
   .FirstElement {
     flex-direction: column;
