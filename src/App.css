@@ -715,11 +715,10 @@ profile-photo .img{
   }
 
   .btn-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: none; /* This will hide the entire button group on mobile screens */
   }
 
+  /* Remove or comment out the following styles as they're no longer needed:
   .btn-group .btn {
     display: block;
     width: 100%;
@@ -728,6 +727,7 @@ profile-photo .img{
   }
 
   .btn-group .btn:first-child {
-    order: -1; /* This will move the home button to the top */
+    order: -1;
   }
+  */
 }
