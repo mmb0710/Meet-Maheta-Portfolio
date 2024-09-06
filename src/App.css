@@ -536,20 +536,44 @@ profile-photo .img{
 
  /*------------------- Responsive Design on small screen -------------------*/
 
-/* Medium layout */
-@media only screen and (min-width:1000px) and (max-width:1200px){
-  .container{
-    width: 970px;
+/* Mobile Layout */
+@media only screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
   }
-}
 
-@media(max-width:1050px){
-  .FirstElement{ 
-    flex-direction: column;
-    padding-top: 2rem;
+  .FirstElement {
+    padding-top: 1.5rem;
   }
-  .profile-text{
-    padding: 40px 0px;
+
+  .FirstElement .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-text h1 {
+    font-size: 2rem;
+  }
+
+  .profile-text p {
+    font-size: 14px;
+  }
+
+  .projects {
+    gap: 15px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-skills ul li {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 10px;
   }
 }
 
@@ -562,54 +586,4 @@ profile-photo .img{
   } 
 }  
 
-
-/* Mobile Layout */
-@media only screen and (max-width:767px){
-  .container{
-    width: 350px;
-  }
-
-  .header .menu_icon {
-    display: block;
-  }
-  .header ul{
-    display: none;
-  }
-  .header i{
-    color: #e5e5e5;
-  }
-
-  .profile-text{
-    width: 350px;
-  }
-  .FirstElement .profile-text p{
-    text-align: justify;
-  }
-  .about{
-    flex-direction: column;
-    flex-basis: 100%;
-    margin-bottom: 30px;
-  }
-  .about-skills{
-    width: 100%;
-    margin-top: 30px;
-  }
-  .education-content .row {
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 50px;
-  }
-
-  .education-content .row .education,
-  .education-content .row .internship {
-    flex-basis: 100%;
-    max-width: 100%;
-    margin-top: 30px;
-  }
-  .project{
-    flex-basis: 100%;
-    margin-bottom: 30px;
-  }
-
-}
 
