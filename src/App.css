@@ -101,9 +101,20 @@ body{
 }
 
 @media (max-width: 768px) {
-  .menu_icon {
-    display: block;
-    font-size: 24px;
+  .header-area {
+    padding: 15px 0;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .logo img {
+    width: 70px;
   }
 
   .navbar {
@@ -112,9 +123,12 @@ body{
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #202020;
+    background-color: rgba(32, 32, 32, 0.95);
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
   }
 
   .navbar.active {
@@ -122,7 +136,30 @@ body{
   }
 
   .navbar li {
-    margin: 10px 0;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar li a {
+    font-size: 18px;
+    padding: 10px 0;
+    display: block;
+  }
+
+  .menu_icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .menu_icon:hover {
+    color: #fed700;
+  }
+
+  .bars-icon {
+    color: #fff;
   }
 }
 
@@ -575,42 +612,5 @@ profile-photo .img{
 
   .menu_icon {
     display: none;
-  }
-}
-
-/* Mobile layout */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #202020;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar.active {
-    display: flex; /* This will show the menu when the state is active */
-  }
-
-  .menu_icon {
-    display: block; /* Show the menu icon on mobile */
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .navbar li {
-    margin: 10px 0;
-  }
-
-  .menu_icon {
-    color: #fff;
-    font-size: 24px;
-  }
-
-  .bars-icon {
-    color: #fff;
   }
 }
