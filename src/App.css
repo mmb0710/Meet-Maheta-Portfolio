@@ -636,12 +636,7 @@ profile-photo .img{
     padding: 0 15px;
   }
 
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-  }
+  
 
   .logo {
     font-size: 20px;
@@ -650,14 +645,6 @@ profile-photo .img{
   .logo img {
     width: 60px;
   }
-
-  
-
-  
-
-  
-
-  
 
   .FirstElement {
     flex-direction: column;
