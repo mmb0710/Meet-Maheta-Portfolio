@@ -101,20 +101,9 @@ body{
 }
 
 @media (max-width: 768px) {
-  .header-area {
-    padding: 15px 0;
-  }
-
-  .header {
-    position: relative;
-  }
-
-  .logo {
-    font-size: 22px;
-  }
-
-  .logo img {
-    width: 70px;
+  .menu_icon {
+    display: block;
+    font-size: 24px;
   }
 
   .navbar {
@@ -123,12 +112,9 @@ body{
     top: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(32, 32, 32, 0.95);
+    background-color: #202020;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
   }
 
   .navbar.active {
@@ -136,30 +122,7 @@ body{
   }
 
   .navbar li {
-    margin: 15px 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar li a {
-    font-size: 18px;
-    padding: 10px 0;
-    display: block;
-  }
-
-  .menu_icon {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  .menu_icon:hover {
-    color: #fed700;
-  }
-
-  .bars-icon {
-    color: #fff;
+    margin: 10px 0;
   }
 }
 
@@ -614,3 +577,102 @@ profile-photo .img{
     display: none;
   }
 }
+
+/* Improved mobile layout */
+@media only screen and (max-width: 768px) {
+  /* Container adjustments */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Logo size adjustments */
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  /* Header layout */
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Reduce padding for compact header */
+  }
+
+  /* Hamburger menu icon */
+  .menu_icon {
+    display: block; /* Show the hamburger icon */
+    font-size: 28px; /* Make the icon larger for easier tapping */
+    cursor: pointer;
+    color: #fff;
+  }
+
+  /* Hide navbar by default on mobile */
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #202020;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Make the dropdown full width */
+    padding: 20px 0; /* Add spacing for better accessibility */
+    transition: all 0.3s ease-in-out; /* Smooth menu opening */
+    z-index: 9999;
+  }
+
+  /* Show navbar when active */
+  .navbar.active {
+    display: flex; /* Display the menu */
+  }
+
+  /* Menu items style */
+  .navbar li {
+    margin: 10px 0;
+    width: 100%; /* Each link takes full width */
+    text-align: center;
+  }
+
+  .navbar li a {
+    font-size: 18px; /* Increase font size for readability */
+    color: #fff; /* Text color */
+    padding: 10px 0;
+    width: 100%; /* Ensure full width clickable */
+    transition: color 0.3s ease;
+  }
+
+  .navbar li a:hover {
+    color: #fed700; /* Highlight color on hover */
+  }
+
+  /* Menu icon hover and active states */
+  .bars-icon {
+    color: #fff;
+  }
+
+  /* Add some transition for smoother user experience */
+  .menu_icon:hover {
+    color: #fed700;
+    transition: color 0.3s ease;
+  }
+  
+  /* Sticky header improvement */
+  .header-area.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202020;
+    padding: 10px 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s, padding 0.3s;
+  }
+}
+
