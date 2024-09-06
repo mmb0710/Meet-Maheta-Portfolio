@@ -485,4 +485,21 @@ body {
   .footer {
     padding: 10px;
   }
+
+  /* Make education and internship cards stack vertically */
+  .education-content .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education-content .education, 
+  .education-content .internship {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
 }
