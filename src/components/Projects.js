@@ -66,15 +66,21 @@ const Projects = () => {
             </div>
           </div>
           {/* 3rd Project */}
-          <div className="project reveal-left-projects">
-            <div className="icon-wrapper">
-              <FontAwesomeIcon icon={faNetworkWired} className="project-icon" />
-            </div>
-            <h4>Network Services Portal with Django</h4>
-            <p>
-              Created a web portal using Python's Django framework for user management and service administration. Integrated RESTful APIs for communication between the frontend and backend systems.
-            </p>
-          </div>
+<div className="project reveal-left-projects">
+  <div className="icon-wrapper">
+    <FontAwesomeIcon icon={faNetworkWired} className="project-icon" />
+  </div>
+  <h4>Network Services Portal with Django</h4>
+  <p>
+    Created a web portal using Python's Django framework for user management and service administration. Integrated RESTful APIs for communication between the frontend and backend systems.
+  </p>
+  <div className="project-links">
+    <a href="https://github.com/mmb0710/Network-Services-Portal-with-Django.git" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faGithub} /> GitHub
+    </a>
+  </div>
+</div>
+
           {/* 4th Project */}
           <div className="project reveal-right-projects">
             <div className="icon-wrapper">
