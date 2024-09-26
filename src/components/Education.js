@@ -44,7 +44,7 @@ function Education() {
                         </div>
                     </div>
                     <div className="internship">
-                        <h3 className="title">Internship</h3>
+                        <h3 className="title">Professional Experience</h3>
                         <div className="row">
                             <div className="timeline-box">
                                 <div className="timeline">
@@ -54,13 +54,17 @@ function Education() {
                                         <h3 className="timeline-title">Web Portal Developer - IT Department</h3>
                                         <h4 className="timeline-title">Sintex Industries Limited (Yarn Division)</h4>
                                         <h4 className="timeline-title">
-                                            <i className="fa fa-calendar"></i> August 2022 - January 2023
+                                            <i className="fa fa-calendar"></i> January 2021 - January 2023
                                         </h4>
-                                        <li className="timeline-text">
-                                            Developed and maintained web portal features for the Infra Portal using HTML, CSS, and JavaScript. 
-                                            Built data entry forms for asset management and invoice data using PHP and MySQL. 
-                                            Contributed to automation projects and IT support, gaining practical experience in web development and system automation.
-                                        </li>
+                                        <ul className="timeline-text">
+                                            <li>Led the design, development, and maintenance of dynamic features for the Infra Portal, using HTML, CSS, JavaScript, and PHP.</li>
+                                            <li>Designed and implemented database-driven web applications, including asset management and invoice processing systems, utilizing PHP and MySQL.</li>
+                                            <li>Enhanced the security of web applications by implementing robust user authentication, secure form submissions, and data validation techniques.</li>
+                                            <li>Developed real-time dashboards for monitoring IT infrastructure performance, utilizing JavaScript libraries such as Chart.js and D3.js.</li>
+                                            <li>Conducted troubleshooting and debugging to ensure optimal performance, reducing website downtime and increasing the efficiency of system resources.</li>
+                                            <li>Provided IT support and implemented solutions for data migration, system integration, and automation projects, resulting in smoother project execution and improved workflow.</li>
+                                            
+                                        </ul>
                                     </div> 
                                 </div>
                             </div>

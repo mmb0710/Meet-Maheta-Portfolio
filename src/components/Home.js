@@ -48,9 +48,6 @@ const Home = () => {
           <a href="https://github.com/mmb0710">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://leetcode.com/u/mmb0702/">
-            <FontAwesomeIcon icon={faCode} />
-          </a>
           <a href="https://www.linkedin.com/in/meet-maheta-063608265/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>

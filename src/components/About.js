@@ -43,7 +43,7 @@ const About = () => {
               <li>From : Canada</li>
               <li>Email : mmb0702004@gmail.com</li>
               <li>Availability : Fulltime</li>
-              <li>Experience &lt; 0.5yr</li>
+              <li>Experience : 2 years</li>
             </ul>
           </div>
         </div>
