@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import ProfileImage from '../files/Me.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
@@ -33,26 +33,31 @@ const Home = () => {
         <img src={ProfileImage} alt="Meet Maheta" />
       </div>
       <div className="profile-text reveal-right-home">
-        <h5>Hi I'm</h5><br />
+        <h5>Hi, I'm</h5><br />
         <h1>Meet Maheta</h1><br />
+        <h2 className="profile-subtitle">Full-Stack Developer</h2><br />
         <p>
-        Welcome to my portfolio website! I am an international student who has recently completed a Computer Programming course at Algonquin College in Ottawa, Canada. With a strong passion for coding and a commitment to continuous learning, I have developed a solid foundation in software development and database management. My experience has fueled my eagerness to create innovative solutions and tackle real-world challenges in the tech industry. As I embark on my professional journey, I am excited to contribute my skills and knowledge to impactful projects that push the boundaries of technology. Thank you for visiting, and I look forward to connecting with like-minded professionals.
+          Computer Programming graduate from Algonquin College, Ottawa, with hands-on experience
+          building web portals, mobile apps, and database-driven systems. I enjoy turning complex
+          problems into clean, practical solutions — and I'm actively looking for full-time
+          opportunities where I can contribute and grow.
         </p>
         <div className="btn-group">
-          <a href="mailto:mmb0702004@gmail.com" className="btn">Contact</a>
+          <a href="#projects" className="btn">View My Work</a>
+          <a href="mailto:mmb0702004@gmail.com" className="btn">Get In Touch</a>
         </div>
         <div className="social">
-          <a href="mailto:mmb0702004@gmail.com">
+          <a href="mailto:mmb0702004@gmail.com" aria-label="Email">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <a href="https://github.com/mmb0710">
+          <a href="https://github.com/mmb0710" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://www.linkedin.com/in/meet-maheta-063608265/">
+          <a href="https://www.linkedin.com/in/meet-maheta-063608265/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
