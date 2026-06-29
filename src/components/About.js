@@ -30,20 +30,49 @@ const About = () => {
           <div className="about-content reveal-left-about">
             <h4>About Me</h4>
             <ul>
-              <li>I have recently completed my studies in Computer Programming at Algonquin College, Ottawa, Canada, where I developed a strong foundation in software development, with a focus on Java, SQL, Git, and GitHub.</li>
-              <li>My passion for coding and problem-solving drives me to approach projects with confidence, consistently delivering high-quality results.</li>
-              <li>I am deeply committed to continuous learning and staying adaptable in the ever-evolving world of technology. I actively seek opportunities to expand my knowledge and embrace new technologies and methodologies.</li>
-              <li>Feel free to explore my work and reach out if you have any questions or opportunities for collaboration.</li>
+              <li>Computer Programming graduate from Algonquin College, Ottawa, with a strong foundation in software development, databases, and system design.</li>
+              <li>I bring 2 years of professional experience as a Web Portal Developer at Sintex Industries, where I built and maintained real production systems used by internal teams.</li>
+              <li>I'm passionate about writing clean, maintainable code and enjoy the challenge of learning new technologies to stay current in a fast-moving industry.</li>
+              <li>Currently seeking full-time opportunities in software development — feel free to reach out if you'd like to connect or collaborate.</li>
             </ul>
+
+            <div className="skills-section">
+              <h5>Technical Skills</h5>
+              <div className="skills-grid">
+                <div className="skill-category">
+                  <span className="skill-label">Languages</span>
+                  <div className="skill-tags">
+                    <span className="tag">Java</span>
+                    <span className="tag">Python</span>
+                    <span className="tag">PHP</span>
+                    <span className="tag">JavaScript</span>
+                    <span className="tag">SQL</span>
+                    <span className="tag">COBOL</span>
+                  </div>
+                </div>
+                <div className="skill-category">
+                  <span className="skill-label">Frameworks & Tools</span>
+                  <div className="skill-tags">
+                    <span className="tag">React</span>
+                    <span className="tag">Django</span>
+                    <span className="tag">Android Studio</span>
+                    <span className="tag">MySQL</span>
+                    <span className="tag">Git</span>
+                    <span className="tag">REST APIs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div className="about-skills reveal-right-about">
             <ul>
-              <li>Name : Meet Maheta</li>
-              <li>Age : 21</li>
-              <li>From : Canada</li>
-              <li>Email : mmb0702004@gmail.com</li>
-              <li>Availability : Fulltime</li>
-              <li>Experience : 2 years</li>
+              <li><span className="info-label">Name</span> Meet Maheta</li>
+              <li><span className="info-label">Location</span> Ottawa, Canada</li>
+              <li><span className="info-label">Email</span> mmb0702004@gmail.com</li>
+              <li><span className="info-label">Availability</span> Full-time</li>
+              <li><span className="info-label">Experience</span> 2 years</li>
+              <li><span className="info-label">Education</span> Computer Programming Diploma</li>
             </ul>
           </div>
         </div>
